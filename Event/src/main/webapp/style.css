@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+	/*background-image: url(./imgs/cover_2_blur.jpg);*/
+	background-color: rgba(0, 0, 0, 0.553);
+    height: 5%;
+    width: 100%;
+    margin-bottom:5px;
+}
+
+main h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+a {
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.logo {
+    flex: 2;
+}
+
+.logo p {
+    color: white;
+    text-decoration: none;
+    font-size:1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.nav-menu {
+    flex:3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+    font-size:1.2rem;
+    text-transform: uppercase;
+}
+
+
+
+.dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 920px) {
+    .nav-container {
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    
+    .logo {
+        flex: 1;
+        padding-bottom: 20px;
+    }
+    .nav-menu {
+        flex:1;
+        width: 100%;
+    }
+
+    main {
+        padding-top: 12%;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .nav-menu {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .dropdown{
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown select {
+        width: 100%;
+        color: white;
+        background-color: transparent;
+        border: 2.5px solid white;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+    
+    .dropdown option {
+        background-color: transparent;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    main .line-1 {
+
+        font-size: 0.8rem;
+    }
+
+    main .line-2 {
+
+        font-size: 0.8rem;
+    }
+
+}
